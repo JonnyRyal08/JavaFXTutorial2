@@ -69,7 +69,11 @@ public class Main extends Application {
 
         Scene scene = new Scene(grid, 300, 275);
         primaryStage.setScene(scene);
-
+        scene.getStylesheets().add(Login.class.getResource("Login.css").toExternalForm());
+        //The background image is applied to the .root style,
+        // which means it is applied to the root node of the Scene instance.
+        // The style definition consists of the name of the property (-fx-background-image)
+        // and the value for the property (url(“background.jpg”)).
         primaryStage.show();
     }
 
