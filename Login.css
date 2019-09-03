@@ -1,3 +1,3 @@
-.root{
-    -fx-background-image: "background.jpg";
+.root {
+    -fx-background-image: url("background.jpg");
 }
