@@ -78,7 +78,25 @@ public class Login extends Application {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         launch(args);
+        ProductManager pm = new ProductManager();
+        pm.selectAll();
+
+        // Finally let's insert some data
+        // Will use stringBuilder or similar in video to build/map this
+        // Main point for both: USE PLACEHOLDERS
+        String insertQuery = "INSERT INTO product " +
+                "(id, name, type, manufacturer)" +
+                " VALUES (?, ?, ?, ?)";
+        String[] itemp = {"0001", "Walkman", "Audio", "Sony"};
+
+        pm.insertProd(insertQuery, itemp);
+        pm.selectAll();
+
+
+        // And close our connection at end
+        pm.closeCon();
     }
+
 }
