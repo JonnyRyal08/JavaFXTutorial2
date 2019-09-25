@@ -79,7 +79,7 @@ public class Login extends Application {
 
 
     public static void main(String[] args) throws SQLException {
-        launch(args);
+        //launch(args);
         ProductManager pm = new ProductManager();
         pm.selectAll();
 
