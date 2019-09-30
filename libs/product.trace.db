@@ -1,0 +1,34 @@
+2019-09-24 21:48:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRODUCT" already exists; SQL statement:
+create table Product 
+( 
+  id int auto_increment primary key, 
+  name varchar, 
+  type varchar, 
+  manufacturer varchar,
+) [42101-197]
+2019-09-24 21:48:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRODUCTIONRECORD" already exists; SQL statement:
+create table ProductionRecord ( 
+ product_id int primary key, 
+ production_num int auto_increment, 
+ serial_num varchar, 
+ date_produced datetime 
+) [42101-197]
+2019-09-24 21:48:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRODUCT" already exists; SQL statement:
+create table Product 
+( 
+  id int auto_increment primary key, 
+  name varchar, 
+  type varchar, 
+  manufacturer varchar
+) [42101-197]
+2019-09-24 21:48:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRODUCTIONRECORD" already exists; SQL statement:
+create table ProductionRecord ( 
+ product_id int primary key, 
+ production_num int auto_increment, 
+ serial_num varchar, 
+ date_produced datetime 
+) [42101-197]
