@@ -13,7 +13,7 @@ public class ProductManager {
     private Connection con = null;
 
     public ProductManager() throws SQLException {
-        con = DriverManager.getConnection("jdbc:h2:c:\\Users\\jrobertson08\\IdeaProjects\\Login\\libs\\product");
+        con = DriverManager.getConnection("jdbc:h2:~/product");
     }
 
     public void insertProd(String iQuery, String[] insertValues) throws SQLException {
